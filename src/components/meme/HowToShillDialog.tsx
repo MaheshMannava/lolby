@@ -53,7 +53,7 @@ export function HowToShillDialog({
               {/* Dr. Shill image */}
               <div className="absolute right-4 top-16 w-32 h-32">
                 <img
-                  src="./src/DRSHILL3 1.png"
+                  src="./images/DRSHILL3 1.png"
                   alt="Dr. Shilly"
                   className="w-full h-full object-contain"
                 />
