@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Header } from "@/components/meme/Header";
 import { CreateMemeButton } from "@/components/meme/CreateMemeButton";
 import { MemeCard } from "@/components/meme/MemeCard";
-import { HowToShillDialog } from "@/components/meme/HowToShillDialog";
 
 const memes = [
   {
@@ -28,9 +26,7 @@ const memes = [
   },
 ];
 
-function Home() {
-  const [showHowTo, setShowHowTo] = useState(true);
-
+export default function MemePage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <Header />
@@ -40,9 +36,6 @@ function Home() {
           <MemeCard key={meme.symbol} {...meme} />
         ))}
       </div>
-      <HowToShillDialog open={showHowTo} onOpenChange={setShowHowTo} />
     </div>
   );
 }
-
-export default Home;
