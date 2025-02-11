@@ -50,12 +50,6 @@ export function MemeDialog({
       <DialogPortal>
         <DialogContent className="max-w-[440px] p-0 gap-0 bg-[#E6E6E6] border-0 rounded-none">
           {/* Top yellow strip */}
-          <div className="h-[22px] bg-[#FFFBE6] flex items-center justify-between px-3">
-            <span className="text-[11px] uppercase tracking-wide">
-              My Ticket Balance
-            </span>
-            <span className="text-[11px] tracking-wide">0x348879...</span>
-          </div>
 
           {/* Main content area */}
           <div className="m-3 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.05)]">

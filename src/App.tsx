@@ -21,7 +21,7 @@ function LoadingScreen() {
 function App() {
   return (
     <Suspense fallback={<LoadingScreen />}>
-      <div className="app">
+      <div className="app bg-[#b3b3b3]">
         {/* App routes */}
         <Routes>
           <Route path="/" element={<Home />} />

@@ -15,22 +15,16 @@ export function HowToShillDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogPortal>
-        <DialogContent className="max-w-[440px] p-0 gap-0 bg-[#E6E6E6] border-0 rounded-none">
+        <DialogContent className="max-w-[440px] gap-0 bg-[#E6E6E6] border-0 rounded-none px-0 py-[opx] bg-[757575] bg-[757575]">
           {/* Yellow strip at top */}
-          <div className="h-[22px] bg-[#FFFBE6] flex items-center justify-between px-3">
-            <span className="text-[11px] uppercase tracking-wide">
-              My Ticket Balance
-            </span>
-            <span className="text-[11px] tracking-wide">0x348879...</span>
-          </div>
 
           {/* Main content area */}
-          <div className="m-3 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.05)]">
+          <div className="m-3 shadow-[2px_2px_4px_rgba(0,0,0,0.05)] bg-[757575] bg-[#bdbdbd]">
             {/* Header */}
             <div className="p-4 flex items-center justify-between border-b border-[#E6E6E6]">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white flex items-center justify-center">
-                  <span className="font-serif text-base leading-none">
+                <div className="w-10 h-10 flex items-center justify-center bg-[757575] bg-[#bcbcbc]">
+                  <span className="font-serif text-base leading-none text-[#797979]">
                     Dr
                     <br />
                     Shill
@@ -47,11 +41,11 @@ export function HowToShillDialog({
             </div>
 
             {/* Content */}
-            <div className="p-6 relative">
+            <div className="p-6 relative bg-[757575]">
               {/* Speech bubble */}
-              <div className="bg-[#FFFBE6] p-3 rounded-lg mb-6 relative">
+              <div className="p-3 rounded-lg mb-6 relative font-serif bg-[#efefef]">
                 <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-[8px] border-l-[#FFFBE6] border-y-[6px] border-y-transparent" />
-                <p className="font-comic text-sm">
+                <p className="font-comic text-sm font-serif">
                   "YUH GOT TO TAKE RESPONSIBILITY FOR YOUR TICKETS, MUCHACHO."
                 </p>
               </div>
@@ -59,8 +53,8 @@ export function HowToShillDialog({
               {/* Dr. Shill image */}
               <div className="absolute right-4 top-16 w-32 h-32">
                 <img
-                  src="/images/dr-shill.png"
-                  alt="Dr. Shill"
+                  src="./src/DRSHILL3 1.png"
+                  alt="Dr. Shilly"
                   className="w-full h-full object-contain"
                 />
               </div>

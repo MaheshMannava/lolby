@@ -25,14 +25,9 @@ export function WalletDialog({
       <DialogPortal>
         <DialogContent className="max-w-[440px] p-0 gap-0 bg-[#E6E6E6] border-0 rounded-none">
           {/* Yellow strip at top */}
-          <div className="h-[22px] bg-[#FFFBE6] flex items-center px-3">
-            <span className="text-[11px] uppercase tracking-wide">
-              My Ticket Balance
-            </span>
-          </div>
 
           {/* Main content area with layered shadow effect */}
-          <div className="m-3 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.05)]">
+          <div className="m-3 shadow-[2px_2px_4px_rgba(0,0,0,0.05)] bg-[#cdcdcd]">
             {/* Header */}
             <div className="p-4 flex items-center justify-between border-b border-[#E6E6E6]">
               <div className="flex items-center gap-2">
@@ -47,11 +42,11 @@ export function WalletDialog({
             </div>
 
             {/* Wallet options */}
-            <div className="p-4 space-y-[6px]">
+            <div className="p-4 space-y-[6px] bg-[#a3a3a3]">
               {walletOptions.map((wallet) => (
                 <button
                   key={wallet}
-                  className="w-full h-12 px-4 bg-white hover:bg-gray-50 border border-[#E6E6E6] flex items-center justify-between font-serif"
+                  className="w-full h-12 px-4 hover:bg-gray-50 border border-[#E6E6E6] flex items-center justify-between font-serif bg-[#cfcfcf]"
                 >
                   <span>{wallet}</span>
                   <span className="text-lg">→</span>

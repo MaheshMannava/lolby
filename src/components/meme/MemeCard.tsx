@@ -26,16 +26,16 @@ export function MemeCard({
   return (
     <>
       <Card
-        className="w-full bg-white shadow-md p-4 mb-4 cursor-pointer hover:bg-gray-50"
+        className="w-full bg-[#FFFFFF] shadow-md p-4 mb-4 cursor-pointer hover:bg-gray-50 rounded-none"
         onClick={() => setDialogOpen(true)}
       >
-        <div className="flex gap-4">
+        <div className="flex gap-4 bg-white">
           <img
             src={imageUrl}
             alt={symbol}
-            className="w-24 h-24 object-cover rounded-md"
+            className="w-24 h-24 object-cover rounded-none bg-[url('./src/cornim11 1.png')]"
           />
-          <div className="flex-1">
+          <div className="flex-1 font-serif">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-xl font-bold">${symbol}</h3>
             </div>
@@ -45,7 +45,7 @@ export function MemeCard({
                 <Button
                   variant="outline"
                   size="sm"
-                  className="bg-[#2563EB] text-white hover:bg-blue-700 rounded"
+                  className="bg-[#2563EB] text-white hover:bg-blue-700 rounded-none"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <ThumbsDown className="h-4 w-4" />
@@ -53,7 +53,7 @@ export function MemeCard({
                 <Button
                   variant="outline"
                   size="sm"
-                  className="flex items-center gap-1 border border-[#E6E6E6] rounded"
+                  className="flex items-center gap-1 border border-[#E6E6E6] rounded-none"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <Ticket className="h-4 w-4" />
@@ -61,7 +61,7 @@ export function MemeCard({
                 <Button
                   variant="outline"
                   size="sm"
-                  className="bg-orange-500 text-white hover:bg-orange-600 rounded"
+                  className="bg-orange-500 text-white hover:bg-orange-600 rounded-none"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <ThumbsUp className="h-4 w-4" />
@@ -76,7 +76,6 @@ export function MemeCard({
           </div>
         </div>
       </Card>
-
       <MemeDialog
         open={dialogOpen}
         onOpenChange={setDialogOpen}

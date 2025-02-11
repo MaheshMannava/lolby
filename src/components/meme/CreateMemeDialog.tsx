@@ -45,12 +45,6 @@ export function CreateMemeDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-xl p-0 gap-0 bg-gray-100">
         {/* Header */}
-        <div className="p-4 flex items-center justify-between border-b border-gray-200">
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-500">MY TICKET BALANCE</span>
-            <span className="text-sm">{walletAddress}</span>
-          </div>
-        </div>
 
         {/* Content */}
         <div className="p-6 bg-[#FFFBE6]">
@@ -163,7 +157,6 @@ export function CreateMemeDialog({
             </div>
           </div>
         </div>
-
         {/* Footer */}
         <div className="p-6 bg-[#FFFBE6]">
           <Button
