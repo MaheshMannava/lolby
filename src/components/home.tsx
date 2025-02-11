@@ -9,21 +9,21 @@ const memes = [
     symbol: "PINP",
     description:
       "The coin that makes you a true individual. This should be a max of 3 lines of text...",
-    imageUrl: "./src/Image and frame.png",
+    imageUrl: "./public/images/Image and frame.png",
     ticketCount: 8045,
     isTopPerformer: true,
   },
   {
     symbol: "CRAP",
     description: "This one's for the dookies out there.",
-    imageUrl: "./src/crap.png",
+    imageUrl: "./public/images/crap.png",
     ticketCount: 324,
   },
   {
     symbol: "KERN",
     description:
       "The Opportunity you've all been waiting for. Invest at least 12 thumbs for good luck!",
-    imageUrl: "./src/cornim11 1.png",
+    imageUrl: "./public/images/cornim11 1.png",
     ticketCount: 5,
   },
 ];
