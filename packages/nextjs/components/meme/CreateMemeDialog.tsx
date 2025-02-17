@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "~~/components/ui/button";
-import { Dialog, DialogContent } from "~~/components/ui/dialog";
-import { Input } from "~~/components/ui/input";
-import { Label } from "~~/components/ui/label";
+import { Button } from "../ui/button";
+import { Dialog, DialogContent } from "../ui/dialog";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import { ArrowLeft, Check, Upload } from "lucide-react";
-import { Textarea } from "~~/components/ui/textarea";
+import { Textarea } from "../ui/textarea";
 
 interface CreateMemeDialogProps {
   open: boolean;

@@ -1,9 +1,9 @@
 "use client";
 
-import { Header } from "~~/components/meme/Header";
-import { CreateMemeButton } from "~~/components/meme/CreateMemeButton";
-import { MemeCard } from "~~/components/meme/MemeCard";
-import { HowToShillDialog } from "~~/components/meme/HowToShillDialog";
+import { Header } from "../components/meme/Header";
+import { CreateMemeButton } from "../components/meme/CreateMemeButton";
+import { MemeCard } from "../components/meme/MemeCard";
+import { HowToShillDialog } from "../components/meme/HowToShillDialog";
 import { useState } from "react";
 
 const memes = [

@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent } from "~~/components/ui/dialog";
+import { Dialog, DialogContent } from "../ui/dialog";
 import { DialogPortal } from "@radix-ui/react-dialog";
 
 interface WalletDialogProps {
@@ -54,4 +54,17 @@ export function WalletDialog({
 
             {/* Footer */}
             <div className="p-4 border-t border-[#E6E6E6]">
-              <p className="text-[11px] text-[#666
+              <p className="text-[11px] text-[#666666] mb-4 text-center max-w-[360px] mx-auto leading-[14px]">
+                DON&apos;T HAVE A WALLET? GENERATE A BURNER WALLET TO MAKE
+                THINGS EASY. ANY WINNINGS FROM THE GAME WILL BE SENT HERE.
+              </p>
+              <button className="w-full h-12 bg-[#2563EB] hover:bg-blue-700 text-white font-serif flex items-center justify-center gap-2">
+                GENERATE BURNER 🔥
+              </button>
+            </div>
+          </div>
+        </DialogContent>
+      </DialogPortal>
+    </Dialog>
+  );
+}
