@@ -22,13 +22,17 @@ function App() {
   return (
     <Suspense fallback={<LoadingScreen />}>
       <div className="app bg-[#b3b3b3]">
+        {/* Tempo routes for the editor */}
+        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
+
         {/* App routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/meme" element={<MemePage />} />
+          {import.meta.env.VITE_TEMPO === "true" && (
+            <Route path="/tempobook/*" />
+          )}
         </Routes>
-        {/* Tempo routes for the editor */}
-        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </div>
     </Suspense>
   );
