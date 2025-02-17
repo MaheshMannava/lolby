@@ -2,7 +2,6 @@ import { Suspense } from "react";
 import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import routes from "tempo-routes";
-import MemePage from "./app/meme/page";
 
 function LoadingScreen() {
   return (
@@ -28,7 +27,6 @@ function App() {
         {/* App routes */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/meme" element={<MemePage />} />
           {import.meta.env.VITE_TEMPO === "true" && (
             <Route path="/tempobook/*" />
           )}
