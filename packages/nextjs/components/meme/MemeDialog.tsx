@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "~~/components/ui/dialog";
 import { DialogPortal } from "@radix-ui/react-dialog";
 import { ArrowLeft, Ticket } from "lucide-react";
 
@@ -49,8 +49,6 @@ export function MemeDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogPortal>
         <DialogContent className="max-w-[440px] p-0 gap-0 bg-[#E6E6E6] border-0 rounded-none">
-          {/* Top yellow strip */}
-
           {/* Main content area */}
           <div className="m-3 bg-white shadow-[2px_2px_4px_rgba(0,0,0,0.05)]">
             {/* Header with back button and symbol */}

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Button } from "~~/components/ui/button";
+import { Card } from "~~/components/ui/card";
 import { ThumbsDown, ThumbsUp, Ticket } from "lucide-react";
 import { MemeDialog } from "./MemeDialog";
 
@@ -33,7 +33,7 @@ export function MemeCard({
           <img
             src={imageUrl}
             alt={symbol}
-            className="w-24 h-24 object-cover rounded-none bg-[url('./src/cornim11 1.png')]"
+            className="w-24 h-24 object-cover rounded-none"
           />
           <div className="flex-1 font-serif">
             <div className="flex items-center gap-2 mb-2">

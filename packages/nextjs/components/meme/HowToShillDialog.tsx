@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "~~/components/ui/dialog";
 import { DialogPortal } from "@radix-ui/react-dialog";
 
 interface HowToShillDialogProps {
@@ -16,8 +16,6 @@ export function HowToShillDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogPortal>
         <DialogContent className="max-w-[440px] gap-0 bg-[#E6E6E6] border-0 rounded-none px-0 py-[opx] bg-[757575] bg-[757575]">
-          {/* Yellow strip at top */}
-
           {/* Main content area */}
           <div className="m-3 shadow-[2px_2px_4px_rgba(0,0,0,0.05)] bg-[757575] bg-[#bdbdbd]">
             {/* Header */}
@@ -53,7 +51,7 @@ export function HowToShillDialog({
               {/* Dr. Shill image */}
               <div className="absolute right-4 top-16 w-32 h-32">
                 <img
-                  src="./images/DRSHILL3 1.png"
+                  src="/images/DRSHILL3 1.png"
                   alt="Dr. Shilly"
                   className="w-full h-full object-contain"
                 />

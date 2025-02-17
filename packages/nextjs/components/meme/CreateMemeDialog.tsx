@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from "~~/components/ui/button";
+import { Dialog, DialogContent } from "~~/components/ui/dialog";
+import { Input } from "~~/components/ui/input";
+import { Label } from "~~/components/ui/label";
 import { ArrowLeft, Check, Upload } from "lucide-react";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "~~/components/ui/textarea";
 
 interface CreateMemeDialogProps {
   open: boolean;
@@ -44,8 +44,6 @@ export function CreateMemeDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-xl p-0 gap-0 bg-gray-100">
-        {/* Header */}
-
         {/* Content */}
         <div className="p-6 bg-[#FFFBE6]">
           <div className="flex items-center mb-6">
